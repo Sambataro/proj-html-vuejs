@@ -90,13 +90,13 @@ header .mission a:hover {
 }
 
 .welcome {
-  height: 450px;
   width: 100%;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 200;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 50px 0;
 }
 .welcome .top {
   display: flex;
@@ -151,12 +151,12 @@ header .mission a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 930px;
   width: 100%;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 200;
   line-height: 30px;
   background-color: #F1EFEF;
+  padding: 100px 0;
 }
 .doctors .top {
   align-items: center;
@@ -230,4 +230,76 @@ header .mission a:hover {
 }
 .doctors .bottom .item ul li {
   margin: 2px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 850px;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
+  line-height: 30px;
+}
+.services .top {
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  height: 270px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.services .top hr {
+  width: 180px;
+  margin: 20px;
+  margin-left: 34%;
+  color: #7B818D;
+}
+.services .top h3 {
+  font-weight: 200;
+  font-size: 32px;
+}
+.services .top p {
+  margin-top: 20px;
+  text-align: center;
+}
+.services .bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 70%;
+  height: 600px;
+}
+.services .bottom .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 3 - 20px);
+  height: 200px;
+  margin: 0 10px;
+}
+.services .bottom .item img {
+  width: 20%;
+  margin-bottom: 20px;
+}
+.services .bottom .item h5, .services .bottom .item p {
+  font-weight: 200;
+  color: #7B818D;
+  text-align: center;
+}
+.services .bottom .item h5 {
+  font-size: 15px;
+}
+.services .bottom .item h5:hover {
+  color: #39AFBB;
+  cursor: pointer;
+  transition: 1s;
+}
+.services .bottom .item p {
+  color: #7B818D;
+  font-size: 12px;
 }
