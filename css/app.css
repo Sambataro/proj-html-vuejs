@@ -108,7 +108,7 @@ header .mission a:hover {
 }
 .welcome .top h3 {
   font-weight: 200;
-  font-size: 32px;
+  font-size: 35px;
 }
 .welcome .top p {
   margin-top: 20px;
@@ -156,7 +156,7 @@ header .mission a:hover {
   font-weight: 200;
   line-height: 30px;
   background-color: #F1EFEF;
-  padding: 100px 0;
+  padding: 30px 0 100px 0;
 }
 .doctors .top {
   align-items: center;
@@ -175,7 +175,7 @@ header .mission a:hover {
 }
 .doctors .top h3 {
   font-weight: 200;
-  font-size: 32px;
+  font-size: 35px;
 }
 .doctors .top p {
   margin-top: 20px;
@@ -236,7 +236,7 @@ header .mission a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 850px;
+  padding: 50px;
   width: 100%;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 200;
@@ -259,7 +259,7 @@ header .mission a:hover {
 }
 .services .top h3 {
   font-weight: 200;
-  font-size: 32px;
+  font-size: 35px;
 }
 .services .top p {
   margin-top: 20px;
@@ -305,6 +305,46 @@ header .mission a:hover {
 }
 
 .tour-section {
-  height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
   width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
+  line-height: 30px;
+  background-image: url("../img/paralax-bg-tour-facilities.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.tour-section .top {
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  color: white;
+}
+.tour-section .top hr {
+  width: 180px;
+  margin: 20px;
+  margin-left: 34%;
+  color: #7B818D;
+}
+.tour-section .top h3 {
+  font-weight: 200;
+  font-size: 35px;
+}
+.tour-section .top p {
+  margin-top: 20px;
+  text-align: center;
+}
+.tour-section .top :last-child {
+  margin-top: 30px;
+  width: 10%;
+}
+.tour-section .top :last-child:hover {
+  cursor: pointer;
 }
