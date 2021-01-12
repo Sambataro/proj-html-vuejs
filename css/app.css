@@ -7,7 +7,7 @@
 header {
   height: 600px;
   width: 100%;
-  background-image: url(/Users/fortunato/Desktop/project/boolean/proj-html-vuejs/images/header-image-homepage.jpg);
+  background-image: url(/images/header-image-homepage.jpg?ae64d257ea801151a56cc1fc3a2bc168);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -302,4 +302,9 @@ header .mission a:hover {
 .services .bottom .item p {
   color: #7B818D;
   font-size: 12px;
+}
+
+.tour {
+  height: 520px;
+  width: 100%;
 }
