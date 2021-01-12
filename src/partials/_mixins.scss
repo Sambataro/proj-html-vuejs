@@ -9,6 +9,7 @@
   text-decoration: none;
   color: white;
   background-color: $color;
+  transition: 1s;
   border-radius: 3px;
   border: 1px solid darken($color, $percent);
   &:hover {
@@ -32,8 +33,27 @@
       {
         color: #39AFBB;
         cursor: pointer;
+        transition: 1s;
       }
     }
   }
 
+}
+
+@mixin social
+{
+  .fa-facebook-square
+  {
+    color: #627AAD;
+  }
+
+  .fa-twitter-square
+  {
+    color: #76BCF1;
+  }
+
+  .fa-instagram-square
+  {
+    color: #658EB0;
+  }
 }

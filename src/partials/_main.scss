@@ -63,6 +63,7 @@
         {
           color: $brandColor;
           cursor: pointer;
+          transition: 1s;
         }
       }
 
@@ -71,6 +72,91 @@
         color: #7B818D;
         font-size: 12px;
         text-align: center;
+      }
+    }
+  }
+}
+
+.doctors
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 930px;
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  line-height: 30px;
+  background-color: #F1EFEF;
+
+  .top
+  {
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 270px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+
+    hr
+    {
+      width: 180px;
+      margin: 20px;
+      margin-left: 34%;
+      color: #7B818D;
+
+    }
+
+    h3
+    {
+      font-weight: 200;
+      font-size: 32px;
+    }
+
+    p
+    {
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+
+  .bottom
+  {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+
+    .item
+    {
+      width: calc(100% / 3);
+      margin: 0 15px;
+      background-color: white;
+      @include listStyle;
+      @include social;
+
+      img
+      {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      h5  , p
+      {
+        padding-left: 30px;
+        font-weight: 200;
+        color:#7B818D;
+      }
+
+      ul
+      {
+        margin: 25px;
+        font-size: 23px;
+
+        li
+        {
+          margin: 2px;
+        }
       }
     }
   }

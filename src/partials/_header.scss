@@ -18,6 +18,7 @@ header
     @include listStyle;
     color: white;
     font-family: "Montserrat", sans-serif;
+    font-size: 15px;
 
     img
     {
@@ -26,8 +27,8 @@ header
     a
     {
       @include btnFunction($brandColor, 10%);
-      padding: 10px 40px;
-      font-size: 16px;
+      padding: 10px 15px;
+      font-size: 15px;
     }
   }
 
@@ -60,7 +61,7 @@ header
     a
     {
       @include btnFunction($brandColor, 10%);
-      padding: 10px 40px;
+      padding: 10px 30px;
       font-size: 15px;
       font-family: "Montserrat", sans-serif;
     }

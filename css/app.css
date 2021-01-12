@@ -21,6 +21,7 @@ header nav {
   align-items: center;
   color: white;
   font-family: "Montserrat", sans-serif;
+  font-size: 15px;
 }
 header nav ul {
   list-style: none;
@@ -35,6 +36,7 @@ header nav ul li {
 header nav ul li:hover {
   color: #39AFBB;
   cursor: pointer;
+  transition: 1s;
 }
 header nav img {
   width: 20%;
@@ -43,10 +45,11 @@ header nav a {
   text-decoration: none;
   color: white;
   background-color: #39AFBB;
+  transition: 1s;
   border-radius: 3px;
   border: 1px solid #2d8a94;
-  padding: 10px 40px;
-  font-size: 16px;
+  padding: 10px 15px;
+  font-size: 15px;
 }
 header nav a:hover {
   background-color: #5ac2cd;
@@ -75,9 +78,10 @@ header .mission a {
   text-decoration: none;
   color: white;
   background-color: #39AFBB;
+  transition: 1s;
   border-radius: 3px;
   border: 1px solid #2d8a94;
-  padding: 10px 40px;
+  padding: 10px 30px;
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
 }
@@ -135,9 +139,95 @@ header .mission a:hover {
 .welcome .bottom .item h5:hover {
   color: #39AFBB;
   cursor: pointer;
+  transition: 1s;
 }
 .welcome .bottom .item p {
   color: #7B818D;
   font-size: 12px;
   text-align: center;
+}
+
+.doctors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 930px;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
+  line-height: 30px;
+  background-color: #F1EFEF;
+}
+.doctors .top {
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  height: 270px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.doctors .top hr {
+  width: 180px;
+  margin: 20px;
+  margin-left: 34%;
+  color: #7B818D;
+}
+.doctors .top h3 {
+  font-weight: 200;
+  font-size: 32px;
+}
+.doctors .top p {
+  margin-top: 20px;
+  text-align: center;
+}
+.doctors .bottom {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+.doctors .bottom .item {
+  width: calc(100% / 3);
+  margin: 0 15px;
+  background-color: white;
+}
+.doctors .bottom .item ul {
+  list-style: none;
+}
+.doctors .bottom .item ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: inline-block;
+  margin: 0 15px;
+}
+.doctors .bottom .item ul li:hover {
+  color: #39AFBB;
+  cursor: pointer;
+  transition: 1s;
+}
+.doctors .bottom .item .fa-facebook-square {
+  color: #627AAD;
+}
+.doctors .bottom .item .fa-twitter-square {
+  color: #76BCF1;
+}
+.doctors .bottom .item .fa-instagram-square {
+  color: #658EB0;
+}
+.doctors .bottom .item img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.doctors .bottom .item h5, .doctors .bottom .item p {
+  padding-left: 30px;
+  font-weight: 200;
+  color: #7B818D;
+}
+.doctors .bottom .item ul {
+  margin: 25px;
+  font-size: 23px;
+}
+.doctors .bottom .item ul li {
+  margin: 2px;
 }
