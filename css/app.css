@@ -7,7 +7,7 @@
 header {
   height: 600px;
   width: 100%;
-  background-image: url(/images/header-image-homepage.jpg?ae64d257ea801151a56cc1fc3a2bc168);
+  background-image: url("../img/header-image-homepage.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -304,7 +304,7 @@ header .mission a:hover {
   font-size: 12px;
 }
 
-.tour {
+.tour-section {
   height: 520px;
   width: 100%;
 }
