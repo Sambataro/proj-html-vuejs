@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", "Source Sans Pro", sans-serif;
 }
 
 header {
@@ -10,6 +9,8 @@ header {
   width: 100%;
   background-image: url(/Users/fortunato/Desktop/project/boolean/proj-html-vuejs/images/header-image-homepage.jpg);
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 header nav {
   height: 80px;
@@ -19,6 +20,7 @@ header nav {
   justify-content: space-between;
   align-items: center;
   color: white;
+  font-family: "Montserrat", sans-serif;
 }
 header nav ul {
   list-style: none;
@@ -36,4 +38,51 @@ header nav ul li:hover {
 }
 header nav img {
   width: 17%;
+}
+header nav a {
+  padding: 10px 40px;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: #39AFBB;
+  border: 1px solid #2d8a94;
+  padding: 10px 40px;
+  font-size: 16px;
+}
+header nav a:hover {
+  background-color: #5ac2cd;
+}
+header .mission {
+  width: 600px;
+  height: 270px;
+  margin-top: 8%;
+  margin-left: 23%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
+  color: white;
+}
+header .mission h2 {
+  font-size: 50px;
+  font-weight: 200;
+}
+header .mission h2 span {
+  color: #39AFBB;
+}
+header .mission p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+header .mission a {
+  padding: 10px 40px;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: #39AFBB;
+  border: 1px solid #2d8a94;
+  padding: 10px 40px;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+header .mission a:hover {
+  background-color: #5ac2cd;
 }

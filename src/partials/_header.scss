@@ -6,6 +6,8 @@ header
   width: 100%;
   background-image: $jumbotronImage;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 
   nav
   {
@@ -15,10 +17,52 @@ header
     @include centerItem;
     @include listStyle;
     color: white;
+    font-family: "Montserrat", sans-serif;
 
     img
     {
       width: 17%;
+    }
+    a
+    {
+      @include btnFunction($brandColor, 10%);
+      padding: 10px 40px;
+      font-size: 16px;
+    }
+  }
+
+  .mission
+  {
+    width: 600px;
+    height: 270px;
+    margin-top: 8%;
+    margin-left: 23%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    color: white;
+
+    h2
+    {
+      font-size: 50px;
+      font-weight: 200;
+      span
+      {
+        color: $brandColor;
+      }
+    }
+
+    p
+    {
+      font-size: 20px;
+      margin:20px 0;
+    }
+
+    a
+    {
+      @include btnFunction($brandColor, 10%);
+      padding: 10px 40px;
+      font-size: 15px;
+      font-family: "Montserrat", sans-serif;
     }
   }
 }

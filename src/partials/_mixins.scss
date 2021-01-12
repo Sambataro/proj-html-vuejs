@@ -5,6 +5,18 @@
   align-items: center;
 }
 
+@mixin btnFunction($color, $percent) {
+  padding: 10px 40px;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: $color;
+  border: 1px solid darken($color, $percent);
+  &:hover {
+    background-color: lighten($color, $percent);
+  }
+}
+
 @mixin listStyle
 {
   ul
