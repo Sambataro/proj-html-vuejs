@@ -37,14 +37,13 @@ header nav ul li:hover {
   cursor: pointer;
 }
 header nav img {
-  width: 17%;
+  width: 20%;
 }
 header nav a {
-  padding: 10px 40px;
-  font-size: 15px;
   text-decoration: none;
   color: white;
   background-color: #39AFBB;
+  border-radius: 3px;
   border: 1px solid #2d8a94;
   padding: 10px 40px;
   font-size: 16px;
@@ -73,11 +72,10 @@ header .mission p {
   margin: 20px 0;
 }
 header .mission a {
-  padding: 10px 40px;
-  font-size: 15px;
   text-decoration: none;
   color: white;
   background-color: #39AFBB;
+  border-radius: 3px;
   border: 1px solid #2d8a94;
   padding: 10px 40px;
   font-size: 15px;
@@ -85,4 +83,61 @@ header .mission a {
 }
 header .mission a:hover {
   background-color: #5ac2cd;
+}
+
+.welcome {
+  height: 450px;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome .top {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 45%;
+  margin-top: 60px;
+  line-height: 30px;
+}
+.welcome .top h3 {
+  font-weight: 200;
+  font-size: 32px;
+}
+.welcome .top p {
+  margin-top: 20px;
+  text-align: center;
+}
+.welcome .bottom {
+  display: flex;
+  width: 70%;
+  margin-top: 40px;
+}
+.welcome .bottom .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% / 4);
+  margin: 0 5px;
+  line-height: 30px;
+}
+.welcome .bottom .item img {
+  width: 30%;
+  margin-bottom: 10px;
+}
+.welcome .bottom .item h5 {
+  color: #7B818D;
+  font-weight: 200;
+  font-size: 15px;
+}
+.welcome .bottom .item h5:hover {
+  color: #39AFBB;
+  cursor: pointer;
+}
+.welcome .bottom .item p {
+  color: #7B818D;
+  font-size: 12px;
+  text-align: center;
 }
