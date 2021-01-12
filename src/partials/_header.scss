@@ -1,0 +1,24 @@
+
+
+header
+{
+  height: 600px;
+  width: 100%;
+  background-image: $jumbotronImage;
+  background-size: cover;
+
+  nav
+  {
+    height: 80px;
+    width: 100%;
+    padding: 0 40px;
+    @include centerItem;
+    @include listStyle;
+    color: white;
+
+    img
+    {
+      width: 17%;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@mixin centerItem
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin listStyle
+{
+  ul
+  {
+    list-style: none;
+
+    li
+    {
+      @include centerItem;
+      display: inline-block;
+      margin: 0 15px;
+
+      &:hover
+      {
+        color: #39AFBB;
+        cursor: pointer;
+      }
+    }
+  }
+
+}

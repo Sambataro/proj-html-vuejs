@@ -1,1 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+}
 
+header {
+  height: 600px;
+  width: 100%;
+  background-image: url(/Users/fortunato/Desktop/project/boolean/proj-html-vuejs/images/header-image-homepage.jpg);
+  background-size: cover;
+}
+header nav {
+  height: 80px;
+  width: 100%;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+header nav ul {
+  list-style: none;
+}
+header nav ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: inline-block;
+  margin: 0 15px;
+}
+header nav ul li:hover {
+  color: #39AFBB;
+  cursor: pointer;
+}
+header nav img {
+  width: 17%;
+}
