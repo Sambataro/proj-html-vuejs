@@ -2,36 +2,7 @@
 
 .welcome
 {
-  width: 100%;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 200;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px 0;
-
-  .top
-  {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 45%;
-    margin-top: 60px;
-    line-height: 30px;
-
-
-    h3
-    {
-      font-weight: 200;
-      font-size: 35px;
-    }
-
-    p
-    {
-      margin-top: 20px;
-      text-align: center;
-    }
-  }
+  @include sectionFormat;
 
   .bottom
   {
@@ -386,5 +357,68 @@
 
 
 
+  }
+}
+
+.form
+{
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-image: url("../img/make-an-appointment.jpg");
+  background-size: cover;
+  color: white;
+  @include sectionFormat;
+
+  .bottom
+  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+
+    form
+    {
+
+
+      input
+      {
+        background: none;
+        color: white;
+        border: 1px solid white;
+        width: 225px;
+        margin: 0 10px 20px 10px;
+        padding: 10px;
+
+      }
+
+      .help
+      {
+        width: 474px;
+        height: 100px;
+        padding-bottom: 70px;
+      }
+    }
+
+
+
+
+
+    .button
+    {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+       a
+      {
+        @include btnFunction($brandColor, 10%);
+        padding: 10px 140px;
+        margin: 0 10px 0 10px;
+        font-size: 15px;
+        font-family: "Montserrat", sans-serif;
+      }
+    }
   }
 }
