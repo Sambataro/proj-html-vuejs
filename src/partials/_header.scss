@@ -18,7 +18,12 @@ header
     @include listStyle;
     color: white;
     font-family: "Montserrat", sans-serif;
-    font-size: 15px;
+    font-size: 13px;
+
+    li:first-child
+    {
+      color: $brandColor;
+    }
 
     img
     {
@@ -28,16 +33,14 @@ header
     {
       @include btnFunction($brandColor, 10%);
       padding: 10px 15px;
-      font-size: 15px;
+      font-size: 13px;
     }
   }
 
   .mission
   {
-    width: 600px;
     height: 270px;
-    margin-top: 8%;
-    margin-left: 23%;
+    margin: 7% 0 0 23%;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 200;
     color: white;
@@ -55,12 +58,13 @@ header
     p
     {
       font-size: 20px;
-      margin:20px 0;
+      margin:6px 0 28px 0;
     }
 
     a
     {
       @include btnFunction($brandColor, 10%);
+      margin-top: 20px;
       padding: 10px 30px;
       font-size: 15px;
       font-family: "Montserrat", sans-serif;

@@ -65,7 +65,7 @@ footer
             font-weight: bold;
             color: white;
             background-color: $brandColor;
-            padding: 6px;
+            padding: 8px;
             border-radius: 50%;
             margin-right: 5px;
           }
@@ -139,6 +139,14 @@ footer
       font-family: "Montserrat", sans-serif;
       font-size: 12px;
       border: 1px solid $grayColor;
+
+      &:hover
+      {
+        background-color: $brandColor;
+        color: white;
+        border:none;
+        transition: 1s;
+      }
     }
 
   }

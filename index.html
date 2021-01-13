@@ -20,10 +20,7 @@
         <nav>
           <img src="img/medical_logo_1x_light.png" alt="avada logo">
           <ul>
-            <li>PROVA</li>
-            <li>PROVA</li>
-            <li>PROVA</li>
-            <li>PROVA</li>
+            <li v-for="option in navMenu">{{option}}</li>
             <a href="#">MAKE APPOINTMENT</a>
           </ul>
         </nav>
@@ -41,41 +38,21 @@
       <main>
         <!-- welcome section -->
         <div class="welcome">
-
           <div class="top">
             <h3>Welcome to Avada Health</h3>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</p>
           </div>
           <div class="bottom">
-            <div class="item">
-              <img src="img/icon-1.png" alt="">
-              <h5>SAME DAY APPOINTMENTS</h5>
-              <p>Sed ut perspiciatis unde omnis iste <br> natus error sit voluptam accusantim</p>
+            <div v-for="item in healtItem" class="item">
+              <img :src="item.image" alt="">
+              <h5>{{item.title}}</h5>
+              <p>{{item.paragraph}}</p>
             </div>
-            <div class="item">
-              <img src="img/icon-2.png" alt="">
-              <h5>WORLD CLASS FACILITIES</h5>
-              <p>Sed ut perspiciatis unde omnis iste <br> natus error sit voluptam accusantim</p>
-            </div>
-            <div class="item">
-              <img src="img/icon-3.png" alt="">
-              <h5>EXPERT DOCTORS</h5>
-              <p>Sed ut perspiciatis unde omnis iste <br> natus error sit voluptam accusantim</p>
-            </div>
-            <div class="item">
-              <img src="img/icon-4.png" alt="">
-              <h5>COMPLEMENTARY THERAPIES</h5>
-              <p>Sed ut perspiciatis unde omnis iste <br> natus error sit voluptam accusantim</p>
-            </div>
-
           </div>
-
-
         </div>
         <!-- /welcome section -->
         <!-- doctors section -->
         <div class="doctors">
-
           <div class="top">
             <img src="img/icon-5.png" alt="">
             <h3>MEET OUR DOCTORS</h3>
@@ -84,46 +61,18 @@
           </div>
 
           <div class="bottom">
-            <div class="item">
-              <img src="img/doctor-1.jpg" alt="">
-              <h5>JON SNOW</h5>
-              <h5>Anesthesiologist</h5>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            <div v-for="doctor in doctors" class="item">
+              <img :src="doctor.image" alt="">
+              <h5>{{doctor.name}}</h5>
+              <h5>{{doctor.genre}}</h5>
+              <p>{{doctor.paragraph}}</p>
               <ul>
                 <li><i class="fab fa-facebook-square"></i></li>
                 <li><i class="fab fa-twitter-square"></i></li>
                 <li><i class="fab fa-instagram-square"></i></li>
               </ul>
-            </div>
-            <div class="item">
-              <img src="img/doctor-2.jpg" alt="">
-              <h5>TONY STARK</h5>
-              <h5>Cardiologist</h5>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-              <ul>
-                <li><i class="fab fa-facebook-square"></i></li>
-                <li><i class="fab fa-twitter-square"></i></li>
-                <li><i class="fab fa-instagram-square"></i></li>
-              </ul>
-
-
-
-            </div>
-            <div class="item">
-              <img src="img/doctor-3.jpg" alt="">
-              <h5>ANNA SMITH</h5>
-              <h5>Nurse Practitioner</h5>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-              <ul>
-                <li><i class="fab fa-facebook-square"></i></li>
-                <li><i class="fab fa-twitter-square"></i></li>
-                <li><i class="fab fa-instagram-square"></i></li>
-              </ul>
-
-
             </div>
           </div>
-
         </div>
         <!-- // doctor section -->
         <!-- service section -->
@@ -137,36 +86,12 @@
           </div>
           <div class="bottom">
 
-            <div class="item">
-              <img src="img/icon-14.png" alt="">
-              <h5>REHABILITATION CENTER</h5>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas</p>
+            <div  v-for="service in services" class="item">
+              <img :src="service.image" alt="">
+              <h5>{{service.name}}</h5>
+              <p>{{service.paragraph}}</p>
             </div>
-            <div class="item">
-              <img src="img/icon-15.png" alt="">
-              <h5>DENTAL IMPLANTS</h5>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas</p>
-            </div>
-            <div class="item">
-              <img src="img/icon-16.png" alt="">
-              <h5>MEDICINE RESEARCH</h5>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas</p>
-            </div>
-            <div class="item">
-              <img src="img/icon-11.png" alt="">
-              <h5>BLOOD BANK</h5>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas</p>
-            </div>
-            <div class="item">
-              <img src="img/icon-12.png" alt="">
-              <h5>PHARMACEUTICAL ADVICE</h5>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas</p>
-            </div>
-            <div class="item">
-              <img src="img/icon-13.png" alt="">
-              <h5>MEDICAL COUNSELING</h5>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas</p>
-            </div>
+
           </div>
         </div>
         <!-- //service section -->
@@ -183,26 +108,12 @@
         <!-- /tour section -->
         <!-- info section -->
         <div class="info-section">
-          <div class="item">
-            <h5>Emergency Care</h5>
-            <img src="img/wave-divider.png" alt="">
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque</p>
+          <div v-for="data in info" class="item">
+            <h5>{{data.name}}</h5>
+            <img :src="data.icon" alt="">
+            <p>{{data.paragraph}}</p>
             <a href="#">LEARN MORE</a>
           </div>
-          <div class="item">
-            <h5>Expert Diagnostics</h5>
-            <img src="img/wave-divider.png" alt="">
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque</p>
-            <a href="#">LEARN MORE</a>
-
-          </div>
-          <div class="item">
-            <h5>Superb Rehabilitation</h5>
-            <img src="img/wave-divider.png" alt="">
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque</p>
-            <a href="#">LEARN MORE</a>
-          </div>
-
         </div>
         <!-- /info section -->
 
@@ -230,10 +141,7 @@
         <!-- logo client section -->
         <div class="client">
           <ul>
-            <li><img src="img/client-logos-1-200x188.png" alt=""> </li>
-            <li><img src="img/client-logos-4-200x188.png" alt=""> </li>
-            <li><img src="img/client-logos-3-200x188.png" alt=""> </li>
-            <li><img src="img/client-logos-2-200x188.png" alt=""> </li>
+            <li v-for="image in client"><img :src="image.logo" alt=""></li>
           </ul>
         </div>
         <!-- /logo client section -->
