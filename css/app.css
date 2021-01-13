@@ -160,7 +160,6 @@ footer .item {
   width: calc(100% / 3);
   height: 90%;
   background-color: white;
-  border: 1px solid black;
 }
 footer .item ul {
   list-style: none;
@@ -194,6 +193,24 @@ footer .item .list-item ul {
 }
 footer .item .list-item ul li {
   display: block;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  margin: 10px 0;
+}
+footer .item .list-item ul li .contact-style {
+  background-color: white;
+  color: #39AFBB;
+  font-size: 14px;
+}
+footer .item .list-item ul li i {
+  font-size: 8px;
+  font-weight: bold;
+  color: white;
+  background-color: #39AFBB;
+  padding: 6px;
+  border-radius: 50%;
+  margin-right: 5px;
 }
 footer .item img {
   width: 56%;

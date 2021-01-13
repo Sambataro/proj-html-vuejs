@@ -37,7 +37,6 @@ footer
     width: calc(100% / 3);
     height: 90%;
     background-color: white;
-    border: 1px solid black;
 
 
     .list-item
@@ -48,6 +47,28 @@ footer
         li
         {
           display: block;
+          font-family: 'Source Sans Pro', sans-serif;
+          font-weight: 200;
+          font-size: 15px;
+          margin: 10px 0;
+
+          .contact-style
+          {
+            background-color: white;
+            color: $brandColor;
+            font-size: 14px;
+          }
+
+          i
+          {
+            font-size: 8px;
+            font-weight: bold;
+            color: white;
+            background-color: $brandColor;
+            padding: 6px;
+            border-radius: 50%;
+            margin-right: 5px;
+          }
         }
       }
     }

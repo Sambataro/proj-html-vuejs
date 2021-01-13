@@ -258,8 +258,11 @@
           </div>
           <div class="list-item">
             <ul>
-              <li>icona prova</li>
-              <li>icona prova</li>
+              <li v-for="contact in contacts">
+                <i class="contact-style"
+                :class="contact.icon"></i>
+                {{contact.info}}</li>
+
             </ul>
           </div>
 
@@ -272,11 +275,8 @@
           </div>
           <div class="list-item">
             <ul>
-              <li>icona prova</li>
-              <li>icona prova</li>
-              <li>icona prova</li>
-              <li>icona prova</li>
-              <li>icona prova</li>
+              <li v-for="name in departments"><i class="fas fa-chevron-right"></i>{{name}}</li>
+
             </ul>
           </div>
           <a href="#">VIEW OUR DEPARTMENTS</a>
