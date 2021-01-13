@@ -1,0 +1,124 @@
+
+footer
+{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 380px;
+  background-color: #F1EFEF;
+  @include listStyle;
+
+   .copy
+   {
+     li
+    {
+      font-size: 14px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 200;
+      color: $grayColor;
+      border-right: 1px solid gray;
+      padding-right: 20px;
+    }
+    :last-child
+    {
+      border-right: none;
+    }
+   }
+
+
+  .item
+  {
+    @include flexColumn;
+    justify-content: flex-start;
+    @include listStyle;
+    @include social;
+    align-items: baseline;
+    padding: 30px;
+    width: calc(100% / 3);
+    height: 90%;
+    background-color: white;
+    border: 1px solid black;
+
+
+    .list-item
+    {
+      ul
+      {
+        list-style: none;
+        li
+        {
+          display: block;
+        }
+      }
+    }
+    img
+    {
+      width:56%;
+    }
+
+    hr
+    {
+      margin-top: 20px;
+      width: 100%;
+      color:  $grayColor;
+
+    }
+
+    p
+    {
+      margin-top: 20px;
+      text-align: justify;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 200;
+      line-height: 30px;
+      font-size: 12px;
+      color: $grayColor;
+    }
+
+    h4
+    {
+      font-size: 12px;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    h5
+    {
+      margin-top: 3px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 200;
+      line-height: 30px;
+      font-size: 15px;
+      color: $grayColor;
+    }
+    ul
+    {
+      font-size: 23px;
+      margin-top: 20px;
+
+      li
+      {
+        margin: 2px;
+      }
+    }
+
+    .brake-line-blue
+    {
+      margin-top: 20px;
+      width: 10%;
+      height: 2px;
+      background-color: $brandColor;
+    }
+
+    a
+    {
+      text-decoration: none;
+      color: black;
+      margin-top: 20px;
+      padding:10px 20px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 12px;
+      border: 1px solid $grayColor;
+    }
+
+  }
+}
