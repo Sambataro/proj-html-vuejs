@@ -3,18 +3,18 @@ footer
 {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: $widthContainer;
   height: 380px;
-  background-color: #F1EFEF;
+  background-color: $footerColor;
   @include listStyle;
 
    .copy
    {
      li
     {
-      font-size: 14px;
-      font-family: 'Source Sans Pro', sans-serif;
-      font-weight: 200;
+      font-size: $fontSize13;
+      font-family: $sourceSansPro;
+      font-weight: $fontWeight;
       color: $grayColor;
       border-right: 1px solid gray;
       padding-right: 20px;
@@ -34,7 +34,7 @@ footer
     @include social;
     align-items: baseline;
     padding: 30px;
-    width: calc(100% / 3);
+    width: $itemXthree;
     height: 90%;
     background-color: white;
 
@@ -47,9 +47,9 @@ footer
         li
         {
           display: block;
-          font-family: 'Source Sans Pro', sans-serif;
-          font-weight: 200;
-          font-size: 15px;
+          font-family: $sourceSansPro;
+          font-weight: $fontWeight;
+          font-size: $fontSize13;
           margin: 10px 0;
 
           .contact-style
@@ -79,7 +79,7 @@ footer
 
     hr
     {
-      margin-top: 20px;
+      margin-top: $textMargin;
       width: 100%;
       color:  $grayColor;
 
@@ -87,34 +87,34 @@ footer
 
     p
     {
-      margin-top: 20px;
+      margin-top: $textMargin;
       text-align: justify;
-      font-family: 'Source Sans Pro', sans-serif;
-      font-weight: 200;
-      line-height: 30px;
-      font-size: 12px;
+      font-family: $sourceSansPro;
+      font-weight: $fontWeight;
+      line-height: $lineHeight;
+      font-size: $fontSize13;
       color: $grayColor;
     }
 
     h4
     {
-      font-size: 12px;
-      font-family: "Montserrat", sans-serif;
+      font-size: $fontSize13;
+      font-family: $montserrat;
     }
 
     h5
     {
       margin-top: 3px;
-      font-family: 'Source Sans Pro', sans-serif;
-      font-weight: 200;
-      line-height: 30px;
-      font-size: 15px;
+      font-family: $sourceSansPro;
+      font-weight: $fontWeight;
+      line-height: $lineHeight;
+      font-size: $fontSize15;
       color: $grayColor;
     }
     ul
     {
       font-size: 23px;
-      margin-top: 20px;
+      margin-top: 15px;
 
       li
       {
@@ -124,7 +124,7 @@ footer
 
     .brake-line-blue
     {
-      margin-top: 20px;
+      margin-top: $textMargin;
       width: 10%;
       height: 2px;
       background-color: $brandColor;
@@ -134,10 +134,10 @@ footer
     {
       text-decoration: none;
       color: black;
-      margin-top: 20px;
+      margin-top: $textMargin;
       padding:10px 20px;
-      font-family: "Montserrat", sans-serif;
-      font-size: 12px;
+      font-family: $montserrat;
+      font-size: $fontSize13;
       border: 1px solid $grayColor;
 
       &:hover
@@ -145,7 +145,7 @@ footer
         background-color: $brandColor;
         color: white;
         border:none;
-        transition: 1s;
+        transition: $transitionButton;
       }
     }
 

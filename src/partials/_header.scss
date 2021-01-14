@@ -3,7 +3,7 @@
 header
 {
   height: 600px;
-  width: 100%;
+  width: $widthContainer;
   background-image: $jumbotronImage;
   background-size: cover;
   display: flex;
@@ -17,8 +17,8 @@ header
     @include centerNav;
     @include listStyle;
     color: white;
-    font-family: "Montserrat", sans-serif;
-    font-size: 13px;
+    font-family: $montserrat;
+    font-size: $fontSize13;
 
     li:first-child
     {
@@ -33,7 +33,7 @@ header
     {
       @include btnFunction($brandColor, 10%);
       padding: 10px 15px;
-      font-size: 13px;
+      font-size: $fontSize13;
     }
 
     li:nth-child(3)
@@ -52,11 +52,16 @@ header
       width: 175px;
       background-color: $brandColor;
       opacity: 0.8;
-      transition: 1s;
+      transition: $transitionButton;
 
       a
       {
         border-bottom: 1px solid white;
+      }
+
+      a:last-child
+      {
+        border-bottom: none;
       }
 
     }
@@ -66,14 +71,14 @@ header
   {
     height: 270px;
     margin: 7% 0 0 23%;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 200;
+    font-family: $sourceSansPro;
+    font-weight: $fontWeight;
     color: white;
 
     h1
     {
-      font-size: 60px;
-      font-weight: 200;
+      font-size: $fontSize60;
+      font-weight: $fontWeight;
       span
       {
         color: $brandColor;
@@ -82,7 +87,7 @@ header
 
     p
     {
-      font-size: 20px;
+      font-size: $fontsize20;
       margin:6px 0 28px 0;
     }
 
@@ -91,8 +96,8 @@ header
       @include btnFunction($brandColor, 10%);
       margin-top: 20px;
       padding: 10px 30px;
-      font-size: 15px;
-      font-family: "Montserrat", sans-serif;
+      font-size: $fontSize15;
+      font-family: $montserrat;
     }
   }
 }

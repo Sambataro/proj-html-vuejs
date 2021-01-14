@@ -102,6 +102,9 @@ header nav .dropdown {
 header nav .dropdown a {
   border-bottom: 1px solid white;
 }
+header nav .dropdown a:last-child {
+  border-bottom: none;
+}
 header .mission {
   height: 270px;
   margin: 7% 0 0 23%;
@@ -159,7 +162,7 @@ footer ul li:hover {
   transition: 1s;
 }
 footer .copy li {
-  font-size: 14px;
+  font-size: 13px;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 200;
   color: #7B818D;
@@ -215,7 +218,7 @@ footer .item .list-item ul li {
   display: block;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 200;
-  font-size: 15px;
+  font-size: 13px;
   margin: 10px 0;
 }
 footer .item .list-item ul li .contact-style {
@@ -246,11 +249,11 @@ footer .item p {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 200;
   line-height: 30px;
-  font-size: 12px;
+  font-size: 13px;
   color: #7B818D;
 }
 footer .item h4 {
-  font-size: 12px;
+  font-size: 13px;
   font-family: "Montserrat", sans-serif;
 }
 footer .item h5 {
@@ -263,7 +266,7 @@ footer .item h5 {
 }
 footer .item ul {
   font-size: 23px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 footer .item ul li {
   margin: 2px;
@@ -280,7 +283,7 @@ footer .item a {
   margin-top: 20px;
   padding: 10px 20px;
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   border: 1px solid #7B818D;
 }
 footer .item a:hover {
@@ -352,7 +355,7 @@ footer .item a:hover {
 }
 .welcome .bottom .item p {
   color: #7B818D;
-  font-size: 12px;
+  font-size: 13px;
   text-align: center;
 }
 
@@ -443,7 +446,7 @@ footer .item a:hover {
 }
 .doctors .bottom .item ul {
   margin: 25px;
-  font-size: 23px;
+  font-size: 20px;
 }
 .doctors .bottom .item ul li {
   margin: 2px;
@@ -496,7 +499,7 @@ footer .item a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: calc(100% / 3 - 20px);
+  width: calc(100% / 3);
   height: 200px;
   padding: 0 15px;
 }
@@ -510,7 +513,7 @@ footer .item a:hover {
   text-align: center;
 }
 .services .bottom .item h5 {
-  font-size: 17px;
+  font-size: 20px;
 }
 .services .bottom .item h5:hover {
   color: #39AFBB;
@@ -519,7 +522,7 @@ footer .item a:hover {
 }
 .services .bottom .item p {
   color: #7B818D;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .tour-section {
@@ -599,7 +602,7 @@ footer .item a:hover {
   font-size: 15px;
 }
 .info-section .item p {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 200;
 }
 .info-section .item img {
@@ -611,7 +614,7 @@ footer .item a:hover {
   margin-top: 20px;
   padding: 0 20px;
   font-family: "Montserrat", sans-serif;
-  font-size: 10px;
+  font-size: 13px;
   border: 2px solid white;
 }
 .info-section .item a:hover {

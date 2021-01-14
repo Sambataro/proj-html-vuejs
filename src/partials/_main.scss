@@ -13,9 +13,9 @@
     .item
     {
       @include flexColumn;
-      width: calc(100% / 4);
+      width: $itemXfour;
       margin: 0 5px;
-      line-height: 30px;
+      line-height: $lineHeight;
 
       img
       {
@@ -26,20 +26,20 @@
       h5
       {
         color: $grayColor;
-        font-weight: 200;
-        font-size: 15px;
+        font-weight: $fontWeight;
+        font-size: $fontSize15;
         &:hover
         {
           color: $brandColor;
           cursor: pointer;
-          transition: 1s;
+          transition: $transitionButton;
         }
       }
 
       p
       {
         color:  $grayColor;
-        font-size: 12px;
+        font-size: $fontSize13;
         text-align: center;
       }
     }
@@ -61,7 +61,7 @@
 
     .item
     {
-      width: calc(100% / 3);
+      width: $itemXthree;
       margin: 0 15px;
       background-color: white;
       @include listStyle;
@@ -78,20 +78,20 @@
         color: black;
         padding-left: 30px;
         font-weight: 200;
-        font-size: 15px;
+        font-size: $fontSize15;
       }
 
        p
       {
         padding-left: 30px;
-        font-weight: 200;
+        font-weight: $fontWeight;
         color: $grayColor;
       }
 
       ul
       {
         margin: 25px;
-        font-size: 23px;
+        font-size: $fontsize20;
 
         li
         {
@@ -107,16 +107,16 @@
 
   @include flexColumn;
   padding: 50px;
-  width: 100%;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 200;
-  line-height: 30px;
+  width: $widthContainer;
+  font-family: $sourceSansPro;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
 
   .top
   {
     align-items: center;
     justify-content: center;
-    width: 45%;
+    width: $widthSection;
     height: 270px;
     text-align: center;
     margin-top: 60px;
@@ -133,13 +133,13 @@
 
     h3
     {
-      font-weight: 200;
-      font-size: 35px;
+      font-weight: $fontWeight;
+      font-size: $fontSize35;
     }
 
     p
     {
-      margin-top: 20px;
+      margin-top: $textMargin;
       text-align: center;
     }
   }
@@ -156,7 +156,7 @@
     .item
     {
       @include flexColumn;
-      width: calc(100% / 3 - 20px);
+      width: $itemXthree;
       height: 200px;
       padding: 0 15px;
       img
@@ -167,26 +167,26 @@
 
       h5  , p
       {
-        font-weight: 200;
+        font-weight: $fontWeight;
         color: $grayColor;
         text-align:center;
       }
 
       h5
       {
-        font-size: 17px;
+        font-size: $fontsize20;
         &:hover
         {
           color: $brandColor;
           cursor: pointer;
-          transition: 1s;
+          transition: $transitionButton;
         }
       }
 
       p
       {
         color:  $grayColor;
-        font-size: 16px;
+        font-size: $fontSize13;
       }
 
     }
@@ -197,11 +197,11 @@
 {
   @include flexColumn;
   padding: 100px;
-  width: 100%;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 200;
-  line-height: 30px;
-  background-image: url("../img/paralax-bg-tour-facilities.jpg");
+  width: $widthContainer;
+  font-family: $sourceSansPro;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  background-image: $tourSectionImage;
   background-size: cover;
   background-position: center;
 
@@ -209,7 +209,7 @@
   {
     align-items: center;
     justify-content: center;
-    width: 45%;
+    width: $widthSection;
     text-align: center;
     margin-top: 60px;
     margin-bottom: 20px;
@@ -218,7 +218,7 @@
     hr
     {
       width: 180px;
-      margin: 20px;
+      margin: $textMargin;
       margin-left: 34%;
       color:  $grayColor;
 
@@ -226,13 +226,13 @@
 
     h3
     {
-      font-weight: 200;
-      font-size: 35px;
+      font-weight: $fontWeight;
+      font-size: $fontSize35;
     }
 
     p
     {
-      margin-top: 20px;
+      margin-top: $textMargin;
       text-align: center;
     }
 
@@ -253,30 +253,30 @@
 .info-section
 {
   display: flex;
-  width: 100%;
+  width: $widthContainer;
   height: 230px;
-  font-family: 'Source Sans Pro', sans-serif;
-  line-height: 30px;
+  font-family: $sourceSansPro;
+  line-height: $lineHeight;
 
   .item:first-child
   {
-    background-color: #3BAFBF;
+    background-color: $infoFirstColor;
   }
 
   .item:nth-child(2)
   {
-    background-color: #3697C3;
+    background-color: $infoSecondColor;
   }
 
   .item:last-child
   {
-    background-color: #327EC7;
+    background-color: $infoThirdColor;
   }
 
   .item
   {
     @include flexColumn;
-    width: calc(100% / 3);
+    width: $itemXthree;
     padding:40px;
     color: white;
 
@@ -287,14 +287,14 @@
 
     h5
     {
-      font-size: 15px;
+      font-size: $fontSize15;
 
     }
 
     p
     {
-      font-size: 12px;
-      font-weight: 200;
+      font-size: $fontSize13;
+      font-weight: $fontWeight;
     }
 
     img
@@ -306,17 +306,17 @@
     {
       text-decoration: none;
       color: white;
-      margin-top: 20px;
+      margin-top: $textMargin;
       padding: 0 20px;
-      font-family: "Montserrat", sans-serif;
-      font-size: 10px;
+      font-family: $montserrat;
+      font-size: $fontSize13;
       border: 2px solid white;
 
       &:hover
       {
         color: $brandColor;
         background: white;
-        transition: 1s;
+        transition: $transitionButton;
       }
     }
 
@@ -330,7 +330,7 @@
   justify-content: center;
   align-items: center;
   height: 600px;
-  background-image: url("../img/make-an-appointment.jpg");
+  background-image: $formSectionImage;
   background-size: cover;
   color: white;
   @include sectionFormat;
@@ -338,7 +338,7 @@
   .bottom
   {
     @include flexColumn;
-    width: 45%;
+    width: $widthSection;
     margin-left: 5%;
 
     form
@@ -379,12 +379,12 @@
         background-color: $brandColor;
         border: none;
         border-radius: 3px;
-        font-family: 'Montserrat', sans-serif;
+        font-family: $montserrat;
         &:hover
         {
           cursor: pointer;
           background-color: #58C1CC;
-          transition: 1s;
+          transition: $transitionButton;
         }
       }
 
@@ -406,8 +406,8 @@
         @include btnFunction($brandColor, 10%);
         padding: 10px 140px;
         margin: 0 10px 0 10px;
-        font-size: 15px;
-        font-family: "Montserrat", sans-serif;
+        font-size: $fontSize15;
+        font-family: $montserrat;
       }
     }
   }
@@ -417,7 +417,7 @@
 {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: $widthContainer;
   height: 200px;
   background-image: url("../img/rgb-gradient-bar-for-logo-carrasel.jpg");
   @include listStyle;
