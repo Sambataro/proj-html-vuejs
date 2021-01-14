@@ -14,15 +14,23 @@
      <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   </head>
   <body>
-    <div id="app">
+    <div id="homepage">
       <header>
         <!-- nav con logo -->
         <nav>
           <img src="img/medical_logo_1x_light.png" alt="avada logo">
           <ul>
-            <li v-for="option in navMenu">{{option}}</li>
-            <a href="#">MAKE APPOINTMENT</a>
+            <li v-for="(option,index) in navMenu"
+             @mouseover="option.active = true"
+             @mouseleave="option.active = false" >
+             {{option.name}}
+              <div v-if="option.active == true" class="dropdown">
+                <a v-for="department in departments">{{department}}</a>
+              </div>
+            </li>
+            <a href="#appointemnt">MAKE APPOINTMENT</a>
           </ul>
+
         </nav>
         <!-- //nav con logo -->
         <!-- mission e info -->
@@ -118,7 +126,7 @@
         <!-- /info section -->
 
         <!-- appointemnt section -->
-        <div class="form">
+        <div id="appointemnt" class="form">
           <div class="top">
             <h3>Make An Appointment</h3>
             <hr>
@@ -131,6 +139,7 @@
               <input type="text" placeholder="Phone Number">
               <input type="text" placeholder="Appointament Date"> <br>
               <input type="text" class="help" placeholder="How can we help?*">
+              <i class="far fa-calendar-alt"></i>
             </form>
             <div class="button">
               <a href="#">MAKE AN APPOINTMENT</a>
@@ -191,10 +200,7 @@
         </div>
 
         <ul class="copy">
-          <li>© Copyright 2012 - 2021</li>
-          <li>Avada Theme by Theme Fusion</li>
-          <li>All Rights Reserved</li>
-          <li>Powered by WordPress</li>
+          <li v-for="data in copy">{{data}}</li>
         </ul>
 
       </footer>

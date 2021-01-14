@@ -84,6 +84,20 @@ header nav a {
 header nav a:hover {
   background-color: #5ac2cd;
 }
+header nav li:nth-child(3) {
+  position: relative;
+  padding: 50px 0;
+}
+header nav .dropdown {
+  position: absolute;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 175px;
+  background-color: #39AFBB;
+  opacity: 0.8;
+}
 header .mission {
   height: 270px;
   margin: 7% 0 0 23%;
@@ -647,13 +661,21 @@ footer .item a:hover {
   align-items: center;
   width: 45%;
 }
+.form .bottom form {
+  position: relative;
+}
 .form .bottom form input {
   background: none;
   color: white;
   border: 1px solid white;
   width: 225px;
   margin: 0 10px 20px 10px;
-  padding: 10px;
+  padding: 10px 25px;
+}
+.form .bottom form .fa-calendar-alt {
+  position: absolute;
+  top: 67px;
+  left: 264px;
 }
 .form .bottom form .help {
   width: 474px;

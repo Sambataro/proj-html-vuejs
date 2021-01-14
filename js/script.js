@@ -1,15 +1,24 @@
 var app = new Vue (
 {
 
-  el: "#app",
+  el: "#homepage",
   data: {
     navMenu: [
-      "HOME",
-      "ABOUT",
-      "DEPARTMENTS",
-      "ARTICLES",
+      {
+        name:"HOME",
+      },
+      {
+        name:"ABOUT",
+      },
+      {
+        name:"DEPARTMENTS",
+        active: false,
+      },
+      {
+        name:"ARTICLES",
+      },
     ],
-    
+
     healtItem: [
       {
         image:"img/icon-1.png",
@@ -136,7 +145,13 @@ var app = new Vue (
         info: "1.800.458.556"
 
       },
-    ]
+    ],
+    copy: [
+      "© Copyright 2012 - 2021",
+      "Avada Theme by Theme Fusion",
+      "All Rights Reserved",
+      "Powered by WordPress",
+    ],
   }
 }
 );
