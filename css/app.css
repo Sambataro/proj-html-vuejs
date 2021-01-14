@@ -97,6 +97,10 @@ header nav .dropdown {
   width: 175px;
   background-color: #39AFBB;
   opacity: 0.8;
+  transition: 1s;
+}
+header nav .dropdown a {
+  border-bottom: 1px solid white;
 }
 header .mission {
   height: 270px;
@@ -105,11 +109,11 @@ header .mission {
   font-weight: 200;
   color: white;
 }
-header .mission h2 {
-  font-size: 50px;
+header .mission h1 {
+  font-size: 60px;
   font-weight: 200;
 }
-header .mission h2 span {
+header .mission h1 span {
   color: #39AFBB;
 }
 header .mission p {
@@ -660,6 +664,7 @@ footer .item a:hover {
   justify-content: center;
   align-items: center;
   width: 45%;
+  margin-left: 5%;
 }
 .form .bottom form {
   position: relative;
@@ -681,6 +686,18 @@ footer .item a:hover {
   width: 474px;
   height: 100px;
   padding-bottom: 70px;
+}
+.form .bottom form .input {
+  width: 474px;
+  background-color: #39AFBB;
+  border: none;
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+}
+.form .bottom form .input:hover {
+  cursor: pointer;
+  background-color: #58C1CC;
+  transition: 1s;
 }
 .form .bottom .button {
   width: 100%;

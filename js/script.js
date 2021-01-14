@@ -152,6 +152,8 @@ var app = new Vue (
       "All Rights Reserved",
       "Powered by WordPress",
     ],
-  }
+  },
+
+  
 }
 );

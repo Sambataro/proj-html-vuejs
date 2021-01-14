@@ -35,7 +35,7 @@
         <!-- //nav con logo -->
         <!-- mission e info -->
         <div class="mission">
-          <h2>Caring <span>For Life</span> </h2>
+          <h1>Caring <span>For Life</span> </h1>
           <p>Kind words can be short and easy to speak, but their echoes are truly <br> endless. Avada Health focuses on you as if it was our own family.</p>
           <div class="button">
             <a href="#">LEARN MORE</a>
@@ -134,16 +134,14 @@
           </div>
           <div class="bottom">
             <form>
-              <input type="text" placeholder="Name*">
-              <input type="text" placeholder="Email*"> <br>
-              <input type="text" placeholder="Phone Number">
-              <input type="text" placeholder="Appointament Date"> <br>
+              <input type="text" placeholder="Name*" required>
+              <input type="text" placeholder="Email*" required> <br>
+              <input type="text" placeholder="Phone Number" required>
+              <input type="text" placeholder="Appointament Date" required> <br>
               <input type="text" class="help" placeholder="How can we help?*">
+              <input class="input"type="submit" name="" value="MAKE AN APPOINTMENT">
               <i class="far fa-calendar-alt"></i>
             </form>
-            <div class="button">
-              <a href="#">MAKE AN APPOINTMENT</a>
-            </div>
           </div>
 
         </div>
@@ -192,7 +190,7 @@
           </div>
           <div class="list-item">
             <ul>
-              <li v-for="name in departments"><i class="fas fa-chevron-right"></i>{{name}}</li>
+              <li v-for="department in departments"><i class="fas fa-chevron-right"></i>{{department}}</li>
 
             </ul>
           </div>

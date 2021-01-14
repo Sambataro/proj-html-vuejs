@@ -52,6 +52,12 @@ header
       width: 175px;
       background-color: $brandColor;
       opacity: 0.8;
+      transition: 1s;
+
+      a
+      {
+        border-bottom: 1px solid white;
+      }
 
     }
   }
@@ -64,9 +70,9 @@ header
     font-weight: 200;
     color: white;
 
-    h2
+    h1
     {
-      font-size: 50px;
+      font-size: 60px;
       font-weight: 200;
       span
       {

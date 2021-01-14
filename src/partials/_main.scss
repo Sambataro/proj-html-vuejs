@@ -339,6 +339,7 @@
   {
     @include flexColumn;
     width: 45%;
+    margin-left: 5%;
 
     form
     {
@@ -370,6 +371,21 @@
         width: 474px;
         height: 100px;
         padding-bottom: 70px;
+      }
+
+      .input
+      {
+        width: 474px;
+        background-color: $brandColor;
+        border: none;
+        border-radius: 3px;
+        font-family: 'Montserrat', sans-serif;
+        &:hover
+        {
+          cursor: pointer;
+          background-color: #58C1CC;
+          transition: 1s;
+        }
       }
 
 
