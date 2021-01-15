@@ -9,26 +9,26 @@
 }
 
 input::-moz-placeholder {
-  color: white;
+  color: #70828A;
   opacity: 1;
 }
 
 input:-ms-input-placeholder {
-  color: white;
+  color: #70828A;
   opacity: 1;
 }
 
 input::placeholder {
-  color: white;
+  color: #70828A;
   opacity: 1;
 }
 
 :-ms-input-placeholder {
-  color: white;
+  color: #70828A;
 }
 
 ::-ms-input-placeholder {
-  color: white;
+  color: #70828A;
 }
 
 header {
@@ -40,12 +40,12 @@ header {
   flex-direction: column;
 }
 header nav {
-  height: 80px;
-  width: 100%;
-  padding: 0 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 80px;
+  width: 100%;
+  padding: 0 40px;
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
@@ -143,7 +143,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 380px;
+  height: 450px;
   background-color: #F1EFEF;
 }
 footer ul {
@@ -231,7 +231,7 @@ footer .item .list-item ul li i {
   font-weight: bold;
   color: white;
   background-color: #39AFBB;
-  padding: 8px;
+  padding: 7px;
   border-radius: 50%;
   margin-right: 5px;
 }
@@ -266,7 +266,7 @@ footer .item h5 {
 }
 footer .item ul {
   font-size: 23px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 footer .item ul li {
   margin: 2px;
@@ -327,6 +327,8 @@ footer .item a:hover {
 }
 .welcome .bottom {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 70%;
   margin-top: 40px;
 }
@@ -335,8 +337,8 @@ footer .item a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: calc(100% / 4);
-  margin: 0 5px;
+  width: 20%;
+  margin: 10px;
   line-height: 30px;
 }
 .welcome .bottom .item img {
@@ -395,11 +397,12 @@ footer .item a:hover {
 .doctors .bottom {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   width: 70%;
 }
 .doctors .bottom .item {
-  width: calc(100% / 3);
-  margin: 0 15px;
+  width: 25%;
+  margin: 15px;
   background-color: white;
 }
 .doctors .bottom .item ul {
@@ -489,8 +492,8 @@ footer .item a:hover {
 .services .bottom {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
   width: 70%;
   height: 600px;
 }
@@ -499,12 +502,12 @@ footer .item a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: calc(100% / 3);
+  width: 30%;
   height: 200px;
   padding: 0 15px;
 }
 .services .bottom .item img {
-  width: 20%;
+  width: 25%;
   margin-bottom: 20px;
 }
 .services .bottom .item h5, .services .bottom .item p {
@@ -547,6 +550,9 @@ footer .item a:hover {
   margin-top: 60px;
   margin-bottom: 20px;
   color: white;
+}
+.tour-section .top img {
+  width: 15%;
 }
 .tour-section .top hr {
   width: 180px;
@@ -667,7 +673,7 @@ footer .item a:hover {
   justify-content: center;
   align-items: center;
   width: 45%;
-  margin-left: 5%;
+  margin-left: 7%;
 }
 .form .bottom form {
   position: relative;
@@ -675,7 +681,7 @@ footer .item a:hover {
 .form .bottom form input {
   background: none;
   color: white;
-  border: 1px solid white;
+  border: 1px solid #798991;
   width: 225px;
   margin: 0 10px 20px 10px;
   padding: 10px 25px;
@@ -684,6 +690,7 @@ footer .item a:hover {
   position: absolute;
   top: 67px;
   left: 264px;
+  color: #798991;
 }
 .form .bottom form .help {
   width: 474px;
@@ -692,15 +699,16 @@ footer .item a:hover {
 }
 .form .bottom form .input {
   width: 474px;
-  background-color: #39AFBB;
-  border: none;
-  border-radius: 3px;
   font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: white;
+  background-color: #39AFBB;
+  transition: 1s;
+  border-radius: 3px;
+  border: 1px solid #21666d;
 }
 .form .bottom form .input:hover {
-  cursor: pointer;
-  background-color: #58C1CC;
-  transition: 1s;
+  background-color: #81d1d9;
 }
 .form .bottom .button {
   width: 100%;

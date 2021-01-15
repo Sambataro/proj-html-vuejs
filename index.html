@@ -52,7 +52,7 @@
           </div>
           <div class="bottom">
             <div v-for="item in healtItem" class="item">
-              <img :src="item.image" alt="">
+              <img :src="item.image" alt="icon">
               <h5>{{item.title}}</h5>
               <p>{{item.paragraph}}</p>
             </div>
@@ -70,7 +70,7 @@
 
           <div class="bottom">
             <div v-for="doctor in doctors" class="item">
-              <img :src="doctor.image" alt="">
+              <img :src="doctor.image" :alt="doctor.name">
               <h5>{{doctor.name}}</h5>
               <h5>{{doctor.genre}}</h5>
               <p>{{doctor.paragraph}}</p>
@@ -87,7 +87,7 @@
         <div class="services">
 
           <div class="top">
-            <img src="img/icon-6.png" alt="">
+            <img src="img/icon-6.png" alt="icon service">
             <h3>OUR HEALTH SERVICES</h3>
             <hr>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae</p>
@@ -95,7 +95,7 @@
           <div class="bottom">
 
             <div  v-for="service in services" class="item">
-              <img :src="service.image" alt="">
+              <img :src="service.image" :alt="service.name">
               <h5>{{service.name}}</h5>
               <p>{{service.paragraph}}</p>
             </div>
@@ -106,7 +106,7 @@
         <!-- tour section -->
         <div class="tour-section">
           <div class="top">
-            <img src="img/icon-7.png" alt="">
+            <img src="img/icon-7.png" alt="tour icon">
             <h3>TOUR OUR FACILITIES</h3>
             <hr>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae</p>
@@ -118,7 +118,7 @@
         <div class="info-section">
           <div v-for="data in info" class="item">
             <h5>{{data.name}}</h5>
-            <img :src="data.icon" alt="">
+            <img :src="data.icon" alt="line divider">
             <p>{{data.paragraph}}</p>
             <a href="#">LEARN MORE</a>
           </div>
@@ -155,7 +155,7 @@
       </main>
       <footer>
         <div class="item">
-          <img src="img/medical_logo_1x_dark.png" alt="">
+          <img src="img/medical_logo_1x_dark.png" alt="logo">
           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolemue launti totam aperiam, eaque ipsa quae abillo. Invente veriatis et quasi architecto beatae luptatem accusantium, remaperiamsiat. Voluptatem accusest etsium doloremque laudaien. Lorem ipsum sits dolores ets unser.</p>
           <hr>
           <h5>LEARN MORE ABOUT US</h5>

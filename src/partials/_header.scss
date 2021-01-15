@@ -11,10 +11,12 @@ header
 
   nav
   {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 80px;
-    width: 100%;
+    width: $widthContainer;
     padding: 0 40px;
-    @include centerNav;
     @include listStyle;
     color: white;
     font-family: $montserrat;

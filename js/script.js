@@ -18,7 +18,6 @@ var app = new Vue (
         name:"ARTICLES",
       },
     ],
-
     healtItem: [
       {
         image:"img/icon-1.png",
@@ -92,7 +91,6 @@ var app = new Vue (
         name:"MEDICAL COUNSELING",
         paragraph:"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas"
       },
-
     ],
     departments: [
       "Cardiology",
@@ -106,13 +104,11 @@ var app = new Vue (
         name: "Emergency Care",
         icon: "img/wave-divider.png",
         paragraph: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque",
-
       },
       {
         name: "Expert Diagnostics",
         icon: "img/wave-divider.png",
         paragraph: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque",
-
       },
       {
         name: "Superb Rehabilitation",
@@ -138,12 +134,10 @@ var app = new Vue (
       {
         icon: "fas fa-map-marker-alt" ,
         info: "121 King Street, London United Kingdom"
-
       },
       {
         icon: "fas fa-phone" ,
         info: "1.800.458.556"
-
       },
     ],
     copy: [
@@ -153,7 +147,5 @@ var app = new Vue (
       "Powered by WordPress",
     ],
   },
-
-  
 }
 );

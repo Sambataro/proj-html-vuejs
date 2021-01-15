@@ -4,7 +4,7 @@ footer
   display: flex;
   flex-wrap: wrap;
   width: $widthContainer;
-  height: 380px;
+  height: 450px;
   background-color: $footerColor;
   @include listStyle;
 
@@ -65,7 +65,7 @@ footer
             font-weight: bold;
             color: white;
             background-color: $brandColor;
-            padding: 8px;
+            padding: 7px;
             border-radius: 50%;
             margin-right: 5px;
           }
@@ -114,7 +114,7 @@ footer
     ul
     {
       font-size: 23px;
-      margin-top: 15px;
+      margin-top: $textMargin;
 
       li
       {

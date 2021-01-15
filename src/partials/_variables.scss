@@ -14,9 +14,12 @@ $youtubeColor: red;
 $infoFirstColor: #3BAFBF;
 $infoSecondColor: #3697C3;
 $infoThirdColor: #327EC7;
+$inputGrayColor: #798991;
+$placeholderGrayColor: #70828A;
 // colori
 // font
 $fontSize60: 60px;
+$fontSize40: 40px;
 $fontSize35: 35px;
 $fontsize20: 20px;
 $fontSize15: 15px;
@@ -31,6 +34,9 @@ $textMargin: 20px;
 // misure container e sezioni
 $widthContainer: 100%;
 $widthSection: 45%;
+$welcomeItemWidth: 20%;
+$doctorsItemWidth: 25%;
+$serviceItemWidth: 30%;
+$bottomSectionWidth: 70%;
 $transitionButton: 1s;
 $itemXthree: calc(100% / 3);
-$itemXfour: calc(100% / 4);

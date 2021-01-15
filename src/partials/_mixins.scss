@@ -1,26 +1,19 @@
-@mixin centerNav
-{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 @mixin placeholderKit
 {
 input::placeholder
 {
-  color: white;
+  color: $placeholderGrayColor;
   opacity: 1;
 }
 
 :-ms-input-placeholder
 {
-  color: white;
+  color: $placeholderGrayColor;
 }
 
 ::-ms-input-placeholder
 {
-  color: white;
+  color: $placeholderGrayColor;
 }
 
 }
@@ -31,6 +24,13 @@ input::placeholder
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@mixin flexAndWrap
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 @mixin btnFunction($color, $percent) {
@@ -53,7 +53,9 @@ input::placeholder
 
     li
     {
-      @include centerNav;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       display: inline-block;
       margin: 0 15px;
 
@@ -100,9 +102,9 @@ input::placeholder
   flex-direction: column;
   align-items: center;
   width: $widthContainer;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 200;
-  line-height: 30px;
+  font-family: $sourceSansPro;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
   padding: 30px 0 100px 0;
 
 
@@ -126,13 +128,13 @@ input::placeholder
 
     h3
     {
-      font-weight: 200;
-      font-size: 40px;
+      font-weight: $fontWeight;
+      font-size: $fontSize40;
     }
 
     p
     {
-      margin-top: 20px;
+      margin-top: $textMargin;
       text-align: center;
     }
   }
