@@ -85,6 +85,7 @@
       {
         padding-left: 30px;
         font-weight: $fontWeight;
+        margin-top: $textMargin;
         color: $grayColor;
       }
 
@@ -172,7 +173,7 @@
 
       h5
       {
-        font-size: $fontsize20;
+        font-size: $fontSize15;
         &:hover
         {
           color: $brandColor;

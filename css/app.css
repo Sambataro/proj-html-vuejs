@@ -445,6 +445,7 @@ footer .item a:hover {
 .doctors .bottom .item p {
   padding-left: 30px;
   font-weight: 200;
+  margin-top: 20px;
   color: #7B818D;
 }
 .doctors .bottom .item ul {
@@ -516,7 +517,7 @@ footer .item a:hover {
   text-align: center;
 }
 .services .bottom .item h5 {
-  font-size: 20px;
+  font-size: 15px;
 }
 .services .bottom .item h5:hover {
   color: #39AFBB;
